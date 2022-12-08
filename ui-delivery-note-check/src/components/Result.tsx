@@ -38,7 +38,7 @@ const Result = ({result} : {result: Result}) => {
           {
               result.moduleReleasesCheckResults.map((moduleResult: ModuleReleaseCheckResult) => <ModuleReleaseCheckResult key={module.id} module={moduleResult}/>)
           }
-        </table>  
+        </table>       
       </div>
   )
 }
