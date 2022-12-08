@@ -5,8 +5,8 @@ const Button = ({downloadPdfFile} : {downloadPdfFile: any}) => {
     }
 
     return (
-        <div style={{  position: "relative", right: "0px", left: "40%"}}>
-            <button className='btn' onClick={handleOnClick}>Load as PDF</button>
+        <div>
+            <button className='btn btn-block' onClick={handleOnClick}>Load as PDF</button>
         </div>
     )
 }

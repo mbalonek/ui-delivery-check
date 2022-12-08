@@ -83,7 +83,7 @@ const App : React.FC = () => {
       <Request startCheck={startCheck} />
       { (toggleResponse) && <Response response={response} error={error}/> }
       { (toggleResults) && <Results results={results}/> }
-      {(toggleResults) && <Button downloadPdfFile={downloadPdfFile} /> }
+      {(toggleResults && error === '') && <Button downloadPdfFile={downloadPdfFile} /> }
       
     </div>
   );
